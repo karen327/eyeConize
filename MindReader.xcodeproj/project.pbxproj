@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04447A2C29FCD61100E28DC5 /* EntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A2B29FCD61100E28DC5 /* EntertainmentViewController.swift */; };
+		04447A3029FCE4C200E28DC5 /* Detect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A2F29FCE4C200E28DC5 /* Detect.swift */; };
+		04447A3229FCE4F400E28DC5 /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A3129FCE4F400E28DC5 /* SessionHandler.swift */; };
+		04447A3429FD189A00E28DC5 /* messageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A3329FD189A00E28DC5 /* messageSender.swift */; };
 		045230E429D445E7008F8155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045230E329D445E7008F8155 /* AppDelegate.swift */; };
 		045230E629D445E7008F8155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045230E529D445E7008F8155 /* SceneDelegate.swift */; };
 		045230E829D445E7008F8155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045230E729D445E7008F8155 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 		045230FB29D445EA008F8155 /* MindReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045230FA29D445EA008F8155 /* MindReaderTests.swift */; };
 		0452310529D445EA008F8155 /* MindReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452310429D445EA008F8155 /* MindReaderUITests.swift */; };
 		0452310729D445EA008F8155 /* MindReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452310629D445EA008F8155 /* MindReaderUITestsLaunchTests.swift */; };
+		047631B429FAD4E800DB7556 /* inputBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047631B329FAD4E800DB7556 /* inputBlank.swift */; };
+		04ABEF3329FC1A8A00B9BB55 /* ElseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABEF3229FC1A8A00B9BB55 /* ElseViewController.swift */; };
+		04ABEF3429FC1A8A00B9BB55 /* ElseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABEF3229FC1A8A00B9BB55 /* ElseViewController.swift */; };
+		04ABEF3529FC1A8A00B9BB55 /* ElseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ABEF3229FC1A8A00B9BB55 /* ElseViewController.swift */; };
 		1B1ABDB729EA2CB6002E5D4E /* TopBottomImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1ABDB629EA2CB6002E5D4E /* TopBottomImageButton.swift */; };
 		1B400D7D29F8A987008B2D18 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B400D7C29F8A987008B2D18 /* MusicViewController.swift */; };
 		1B400D7F29F8B4EE008B2D18 /* FirstTeachingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B400D7E29F8B4EE008B2D18 /* FirstTeachingViewController.swift */; };
@@ -51,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04447A2B29FCD61100E28DC5 /* EntertainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainmentViewController.swift; sourceTree = "<group>"; };
+		04447A2F29FCE4C200E28DC5 /* Detect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detect.swift; sourceTree = "<group>"; };
+		04447A3129FCE4F400E28DC5 /* SessionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
+		04447A3329FD189A00E28DC5 /* messageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageSender.swift; sourceTree = "<group>"; };
 		045230E029D445E7008F8155 /* MindReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045230E329D445E7008F8155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045230E529D445E7008F8155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,8 @@
 		0452310029D445EA008F8155 /* MindReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0452310429D445EA008F8155 /* MindReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindReaderUITests.swift; sourceTree = "<group>"; };
 		0452310629D445EA008F8155 /* MindReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		047631B329FAD4E800DB7556 /* inputBlank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputBlank.swift; sourceTree = "<group>"; };
+		04ABEF3229FC1A8A00B9BB55 /* ElseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElseViewController.swift; sourceTree = "<group>"; };
 		1B1ABDB629EA2CB6002E5D4E /* TopBottomImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBottomImageButton.swift; sourceTree = "<group>"; };
 		1B400D7C29F8A987008B2D18 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		1B400D7E29F8B4EE008B2D18 /* FirstTeachingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeachingViewController.swift; sourceTree = "<group>"; };
@@ -147,8 +161,14 @@
 				1BA63E0829F82621002B2339 /* TimeManager.swift */,
 				1BA63E0A29F82686002B2339 /* TimeLabel.swift */,
 				1B1ABDB629EA2CB6002E5D4E /* TopBottomImageButton.swift */,
+				04447A3129FCE4F400E28DC5 /* SessionHandler.swift */,
 				1BA5E65729E98E9C00FB8941 /* LeftRightImageButton.swift */,
 				045230F129D445EA008F8155 /* Info.plist */,
+				047631B329FAD4E800DB7556 /* inputBlank.swift */,
+				04ABEF3229FC1A8A00B9BB55 /* ElseViewController.swift */,
+				04447A2B29FCD61100E28DC5 /* EntertainmentViewController.swift */,
+				04447A2F29FCE4C200E28DC5 /* Detect.swift */,
+				04447A3329FD189A00E28DC5 /* messageSender.swift */,
 			);
 			path = MindReader;
 			sourceTree = "<group>";
@@ -318,14 +338,20 @@
 				1B7B99C329F91738000FE459 /* FoodViewController.swift in Sources */,
 				1B97616929F8FD5D0096A1FF /* CapsuleView.swift in Sources */,
 				1BA63E0729F81911002B2339 /* LockViewController.swift in Sources */,
+				04ABEF3329FC1A8A00B9BB55 /* ElseViewController.swift in Sources */,
+				04447A3229FCE4F400E28DC5 /* SessionHandler.swift in Sources */,
 				1B97616529F8D8C60096A1FF /* LifeViewController.swift in Sources */,
 				1B97616129F8D66C0096A1FF /* FourthTeachingViewController.swift in Sources */,
 				1BA5E65829E98E9C00FB8941 /* LeftRightImageButton.swift in Sources */,
 				1B400D7D29F8A987008B2D18 /* MusicViewController.swift in Sources */,
+				04447A3029FCE4C200E28DC5 /* Detect.swift in Sources */,
 				1B97615D29F8BC8D0096A1FF /* SecondTeachingViewController.swift in Sources */,
+				04447A2C29FCD61100E28DC5 /* EntertainmentViewController.swift in Sources */,
 				1BA63E0929F82621002B2339 /* TimeManager.swift in Sources */,
 				1B7B99C129F916DA000FE459 /* NotificationViewController.swift in Sources */,
 				1B97616329F8D6E30096A1FF /* FinishTeachingViewController.swift in Sources */,
+				047631B429FAD4E800DB7556 /* inputBlank.swift in Sources */,
+				04447A3429FD189A00E28DC5 /* messageSender.swift in Sources */,
 				045230E429D445E7008F8155 /* AppDelegate.swift in Sources */,
 				045230E629D445E7008F8155 /* SceneDelegate.swift in Sources */,
 				1B97615F29F8D4F90096A1FF /* ThirdTeachingViewController.swift in Sources */,
@@ -337,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045230FB29D445EA008F8155 /* MindReaderTests.swift in Sources */,
+				04ABEF3429FC1A8A00B9BB55 /* ElseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0452310529D445EA008F8155 /* MindReaderUITests.swift in Sources */,
+				04ABEF3529FC1A8A00B9BB55 /* ElseViewController.swift in Sources */,
 				0452310729D445EA008F8155 /* MindReaderUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,16 +536,18 @@
 				DEVELOPMENT_TEAM = MW887T44AJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MindReader/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "获取相机权限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CodeJustice.MindReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodeJustice.eyeConize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -535,16 +565,18 @@
 				DEVELOPMENT_TEAM = MW887T44AJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MindReader/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "获取相机权限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CodeJustice.MindReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CodeJustice.eyeConize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

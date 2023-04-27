@@ -1,80 +1,77 @@
 //
-//  FoodViewController.swift
+//  ElseViewController.swift
 //  MindReader
 //
-//  Created by 曾思琦 on 2023/4/26.
+//  Created by mac on 2023/4/28.
 //
 
 import UIKit
-
-class FoodViewController: UIViewController {
-    
-    //图片里面有点：dot  横：slash 加号：cross
-    //点的高度和宽度是15
-    
-    
+class ElseViewController: UIViewController{
     
     var handler = SessionHandler()
-    
     lazy var input = inputBlank(inputStack: inputStackView, inputContent: nil as String?, size: 1, maxLen: 260)
     lazy var historyInput = inputBlank(inputStack: historyInputStackView, inputContent: nil as String?, size: 0.5, maxLen: 260)
-    @IBOutlet weak var fruitButton: UIButton!
     
+    
+    @IBOutlet weak var lockButton: UIButton!
+    
+    
+    @IBOutlet weak var naviBar: UIImageView!
     @IBOutlet weak var faceImage: UIImageView!
-    @IBOutlet weak var goBackButton: UIButton!
     @IBOutlet weak var historyInputStackView: UIStackView!
     @IBOutlet weak var inputStackView: UIStackView!
-    @IBOutlet weak var drinkButton: UIButton!
-    @IBOutlet weak var mealButton: UIButton!
-    @IBOutlet weak var milkButton: UIButton!
-    @IBAction func back(_ sender: UIButton) {
-        
-            sender.backgroundColor = UIColor.green
-            DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
-                sender.backgroundColor = UIColor.clear
-            })
-    }
+    @IBOutlet weak var typeButton: UIButton!
+    @IBOutlet weak var shortcutButton: UIButton!
+    @IBOutlet weak var acButton: UIButton!
+    @IBOutlet weak var lightButton: UIButton!
     @IBAction func touchButton(_ sender: UIButton) {
         sender.backgroundColor = UIColor.green
-        DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
         sender.backgroundColor = UIColor.white
-            self.performSegue(withIdentifier: "goBackToLife", sender: self)
-            self.viewWillDisappear(false)
         })
 
     }
     
     
- 
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("else did load.")
+        
         faceImage.layer.cornerRadius = 20
         faceImage.backgroundColor = .white
         faceImage.contentMode = .scaleAspectFill
         faceImage.clipsToBounds = true
+
         handler.setupCamera()
-        fruitButton.layer.cornerRadius = 10
-        mealButton.layer.cornerRadius = 10
-        drinkButton.layer.cornerRadius = 10
-        milkButton.layer.cornerRadius = 10
-        goBackButton.layer.cornerRadius = 10
+        typeButton.layer.cornerRadius = 10
+        shortcutButton.layer.cornerRadius = 10
+        acButton.layer.cornerRadius = 10
+        lightButton.layer.cornerRadius = 10
+        lockButton.layer.cornerRadius = 10
+        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
+            self.naviBar.image = UIImage(named: "elseNavNormal")
+        })
     }
     
-
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
+        
         // 在当前视图控制器中移除上一个视图控制器
-        if let previousVC = navigationController?.viewControllers.dropLast().last {
-            navigationController?.popToViewController(previousVC, animated: true)
+        if let navigationController = self.navigationController{
+            print("navigationController exists.")
+            if let previousVC = navigationController.viewControllers.dropLast().last {
+                print("removing......")
+                navigationController.popToViewController(previousVC, animated: true)
+            }
         }
+
 
         let myNotificationName = Notification.Name("codeBri")
         NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: myNotificationName, object: nil)
-
         handler.session.startRunning()
-        print(22222)
+        print(7777)
 //        faceImage.image = UIImage(named: "clock1")
         self.handler.videoCaptureCompletionBlockMask = { originalImage in
                        DispatchQueue.main.async {
@@ -83,6 +80,7 @@ class FoodViewController: UIViewController {
                                                       }
                    }
     }
+    
     
     @objc func handleNotification(_ notification: Notification) {
         if let userInfo = notification.userInfo {
@@ -104,24 +102,31 @@ class FoodViewController: UIViewController {
                     print("Decoding...")
                     switch messasge{
                         
-                    case "..-.":
-                        sendMessage(message: "已成功发出消息：我想要吃水果。")
-                        touchButton(fruitButton)
+                    case "..-":
+                        touchButton(typeButton)
+                        sendMessage(message: "进入文字消息撰写模式……")
                         break;
-                    case "-..":
-                        touchButton(mealButton)
-                        sendMessage(message: "已成功发出消息：我想要吃正餐。")
-                        break
-                    case ".-.":
-                        touchButton(drinkButton)
-                        sendMessage(message: "已成功发出消息：我想要喝水")
+                    case "--.":
+                        touchButton(shortcutButton)
+                        sendMessage(message: "进入音乐模式……")
                         break
                     case "---":
-                        touchButton(milkButton)
-                        sendMessage(message: "已成功发出消息：我想要喝牛奶")
+                        touchButton(acButton)
+                        sendMessage(message: "调节空调……")
+                        break
+                    case "-.-":
+                        touchButton(lightButton)
+                        sendMessage(message: "调节灯光……")
                         break
                     case "....":
-                        touchButton(goBackButton)
+                        break
+                    case "..-.":
+                        performSegue(withIdentifier: "goToLife", sender: self)
+                        viewWillDisappear(false)
+                        break
+                    case ".-.-":
+                        performSegue(withIdentifier: "goToEntertainment", sender: self)
+                        viewWillDisappear(false)
                         break
                         
                     case .none: break
@@ -135,26 +140,20 @@ class FoodViewController: UIViewController {
 
         }
     }
-
+    
+    
     func sendMessage(message: String){
         let alertController = UIAlertController(title: "成功！", message: message, preferredStyle: .alert)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             alertController.dismiss(animated: true, completion: nil)
-            print("segue performed")
-            
-
         }
         present(alertController, animated: true, completion: nil)
-        
     }
 
-    
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
+        
+        print("Else will disappear.")
         NotificationCenter.default.removeObserver(self)
         handler.session.stopRunning()
     }
-    
-    
 }

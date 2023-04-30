@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04148B3B29FE4E4500771BDA /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04148B3A29FE4E4500771BDA /* SessionHandler.swift */; };
 		04447A2C29FCD61100E28DC5 /* EntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A2B29FCD61100E28DC5 /* EntertainmentViewController.swift */; };
 		04447A3029FCE4C200E28DC5 /* Detect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A2F29FCE4C200E28DC5 /* Detect.swift */; };
-		04447A3229FCE4F400E28DC5 /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A3129FCE4F400E28DC5 /* SessionHandler.swift */; };
 		04447A3429FD189A00E28DC5 /* messageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04447A3329FD189A00E28DC5 /* messageSender.swift */; };
 		045230E429D445E7008F8155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045230E329D445E7008F8155 /* AppDelegate.swift */; };
 		045230E629D445E7008F8155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045230E529D445E7008F8155 /* SceneDelegate.swift */; };
@@ -59,9 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04148B3A29FE4E4500771BDA /* SessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
 		04447A2B29FCD61100E28DC5 /* EntertainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainmentViewController.swift; sourceTree = "<group>"; };
 		04447A2F29FCE4C200E28DC5 /* Detect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detect.swift; sourceTree = "<group>"; };
-		04447A3129FCE4F400E28DC5 /* SessionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
 		04447A3329FD189A00E28DC5 /* messageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageSender.swift; sourceTree = "<group>"; };
 		045230E029D445E7008F8155 /* MindReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045230E329D445E7008F8155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				1BA63E0829F82621002B2339 /* TimeManager.swift */,
 				1BA63E0A29F82686002B2339 /* TimeLabel.swift */,
 				1B1ABDB629EA2CB6002E5D4E /* TopBottomImageButton.swift */,
-				04447A3129FCE4F400E28DC5 /* SessionHandler.swift */,
+				04148B3A29FE4E4500771BDA /* SessionHandler.swift */,
 				1BA5E65729E98E9C00FB8941 /* LeftRightImageButton.swift */,
 				045230F129D445EA008F8155 /* Info.plist */,
 				047631B329FAD4E800DB7556 /* inputBlank.swift */,
@@ -332,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B1ABDB729EA2CB6002E5D4E /* TopBottomImageButton.swift in Sources */,
+				04148B3B29FE4E4500771BDA /* SessionHandler.swift in Sources */,
 				1B400D7F29F8B4EE008B2D18 /* FirstTeachingViewController.swift in Sources */,
 				045230E829D445E7008F8155 /* ViewController.swift in Sources */,
 				1BA63E0B29F82686002B2339 /* TimeLabel.swift in Sources */,
@@ -339,7 +340,6 @@
 				1B97616929F8FD5D0096A1FF /* CapsuleView.swift in Sources */,
 				1BA63E0729F81911002B2339 /* LockViewController.swift in Sources */,
 				04ABEF3329FC1A8A00B9BB55 /* ElseViewController.swift in Sources */,
-				04447A3229FCE4F400E28DC5 /* SessionHandler.swift in Sources */,
 				1B97616529F8D8C60096A1FF /* LifeViewController.swift in Sources */,
 				1B97616129F8D66C0096A1FF /* FourthTeachingViewController.swift in Sources */,
 				1BA5E65829E98E9C00FB8941 /* LeftRightImageButton.swift in Sources */,

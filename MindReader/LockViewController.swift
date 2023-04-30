@@ -35,7 +35,7 @@ class LockViewController: UIViewController {
             // Check if all imageViews are green
             if self.imageViewArray.allSatisfy({ $0.tintColor == .green }) {
                 // Navigate to next page
-                self.performSegue(withIdentifier: "goToFirstTeachingView", sender: self)
+                self.performSegue(withIdentifier: "goToFirstView", sender: self)
                 // Stop the timer
                 timer.invalidate()
             }

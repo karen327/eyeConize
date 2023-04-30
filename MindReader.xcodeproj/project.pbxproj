@@ -16,9 +16,11 @@
 		045230FB29D445EA008F8155 /* MindReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045230FA29D445EA008F8155 /* MindReaderTests.swift */; };
 		0452310529D445EA008F8155 /* MindReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452310429D445EA008F8155 /* MindReaderUITests.swift */; };
 		0452310729D445EA008F8155 /* MindReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452310629D445EA008F8155 /* MindReaderUITestsLaunchTests.swift */; };
-		1B1ABDB729EA2CB6002E5D4E /* TopBottomImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1ABDB629EA2CB6002E5D4E /* TopBottomImageButton.swift */; };
 		1B400D7D29F8A987008B2D18 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B400D7C29F8A987008B2D18 /* MusicViewController.swift */; };
 		1B400D7F29F8B4EE008B2D18 /* FirstTeachingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B400D7E29F8B4EE008B2D18 /* FirstTeachingViewController.swift */; };
+		1B5E509D29FCFFEE004CACBC /* EntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E509C29FCFFEE004CACBC /* EntertainmentViewController.swift */; };
+		1B5E509F29FD0006004CACBC /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5E509E29FD0006004CACBC /* OthersViewController.swift */; };
+		1B6F34E829FCB7BA001CBD46 /* IntroTeaching.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6F34E729FCB7BA001CBD46 /* IntroTeaching.storyboard */; };
 		1B7B99C129F916DA000FE459 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B99C029F916DA000FE459 /* NotificationViewController.swift */; };
 		1B7B99C329F91738000FE459 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B99C229F91738000FE459 /* FoodViewController.swift */; };
 		1B97615D29F8BC8D0096A1FF /* SecondTeachingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B97615C29F8BC8D0096A1FF /* SecondTeachingViewController.swift */; };
@@ -26,8 +28,6 @@
 		1B97616129F8D66C0096A1FF /* FourthTeachingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B97616029F8D66C0096A1FF /* FourthTeachingViewController.swift */; };
 		1B97616329F8D6E30096A1FF /* FinishTeachingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B97616229F8D6E30096A1FF /* FinishTeachingViewController.swift */; };
 		1B97616529F8D8C60096A1FF /* LifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B97616429F8D8C60096A1FF /* LifeViewController.swift */; };
-		1B97616929F8FD5D0096A1FF /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B97616829F8FD5D0096A1FF /* CapsuleView.swift */; };
-		1BA5E65829E98E9C00FB8941 /* LeftRightImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5E65729E98E9C00FB8941 /* LeftRightImageButton.swift */; };
 		1BA63E0729F81911002B2339 /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA63E0629F81911002B2339 /* LockViewController.swift */; };
 		1BA63E0929F82621002B2339 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA63E0829F82621002B2339 /* TimeManager.swift */; };
 		1BA63E0B29F82686002B2339 /* TimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA63E0A29F82686002B2339 /* TimeLabel.swift */; };
@@ -64,9 +64,11 @@
 		0452310029D445EA008F8155 /* MindReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0452310429D445EA008F8155 /* MindReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindReaderUITests.swift; sourceTree = "<group>"; };
 		0452310629D445EA008F8155 /* MindReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1B1ABDB629EA2CB6002E5D4E /* TopBottomImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBottomImageButton.swift; sourceTree = "<group>"; };
 		1B400D7C29F8A987008B2D18 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		1B400D7E29F8B4EE008B2D18 /* FirstTeachingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTeachingViewController.swift; sourceTree = "<group>"; };
+		1B5E509C29FCFFEE004CACBC /* EntertainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainmentViewController.swift; sourceTree = "<group>"; };
+		1B5E509E29FD0006004CACBC /* OthersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
+		1B6F34E729FCB7BA001CBD46 /* IntroTeaching.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IntroTeaching.storyboard; sourceTree = "<group>"; };
 		1B7B99C029F916DA000FE459 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		1B7B99C229F91738000FE459 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		1B97615C29F8BC8D0096A1FF /* SecondTeachingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTeachingViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +76,6 @@
 		1B97616029F8D66C0096A1FF /* FourthTeachingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthTeachingViewController.swift; sourceTree = "<group>"; };
 		1B97616229F8D6E30096A1FF /* FinishTeachingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishTeachingViewController.swift; sourceTree = "<group>"; };
 		1B97616429F8D8C60096A1FF /* LifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeViewController.swift; sourceTree = "<group>"; };
-		1B97616829F8FD5D0096A1FF /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
-		1BA5E65729E98E9C00FB8941 /* LeftRightImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRightImageButton.swift; sourceTree = "<group>"; };
 		1BA63E0629F81911002B2339 /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
 		1BA63E0829F82621002B2339 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		1BA63E0A29F82686002B2339 /* TimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabel.swift; sourceTree = "<group>"; };
@@ -132,22 +132,18 @@
 				1BE6C11F29E4562600FB55CF /* Supporting Files */,
 				045230E529D445E7008F8155 /* SceneDelegate.swift */,
 				1BA63E0629F81911002B2339 /* LockViewController.swift */,
-				1B400D7E29F8B4EE008B2D18 /* FirstTeachingViewController.swift */,
-				1B97615C29F8BC8D0096A1FF /* SecondTeachingViewController.swift */,
-				1B97615E29F8D4F90096A1FF /* ThirdTeachingViewController.swift */,
-				1B97616029F8D66C0096A1FF /* FourthTeachingViewController.swift */,
-				1B97616229F8D6E30096A1FF /* FinishTeachingViewController.swift */,
+				1B6F34E929FCB875001CBD46 /* TeachingViewControllers */,
 				1B97616429F8D8C60096A1FF /* LifeViewController.swift */,
+				1B5E509C29FCFFEE004CACBC /* EntertainmentViewController.swift */,
+				1B5E509E29FD0006004CACBC /* OthersViewController.swift */,
 				1B7B99C029F916DA000FE459 /* NotificationViewController.swift */,
 				045230E729D445E7008F8155 /* ViewController.swift */,
 				1B400D7C29F8A987008B2D18 /* MusicViewController.swift */,
 				045230E929D445E7008F8155 /* Main.storyboard */,
+				1B6F34E729FCB7BA001CBD46 /* IntroTeaching.storyboard */,
 				1B7B99C229F91738000FE459 /* FoodViewController.swift */,
-				1B97616829F8FD5D0096A1FF /* CapsuleView.swift */,
 				1BA63E0829F82621002B2339 /* TimeManager.swift */,
 				1BA63E0A29F82686002B2339 /* TimeLabel.swift */,
-				1B1ABDB629EA2CB6002E5D4E /* TopBottomImageButton.swift */,
-				1BA5E65729E98E9C00FB8941 /* LeftRightImageButton.swift */,
 				045230F129D445EA008F8155 /* Info.plist */,
 			);
 			path = MindReader;
@@ -168,6 +164,18 @@
 				0452310629D445EA008F8155 /* MindReaderUITestsLaunchTests.swift */,
 			);
 			path = MindReaderUITests;
+			sourceTree = "<group>";
+		};
+		1B6F34E929FCB875001CBD46 /* TeachingViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B400D7E29F8B4EE008B2D18 /* FirstTeachingViewController.swift */,
+				1B97615C29F8BC8D0096A1FF /* SecondTeachingViewController.swift */,
+				1B97615E29F8D4F90096A1FF /* ThirdTeachingViewController.swift */,
+				1B97616029F8D66C0096A1FF /* FourthTeachingViewController.swift */,
+				1B97616229F8D6E30096A1FF /* FinishTeachingViewController.swift */,
+			);
+			path = TeachingViewControllers;
 			sourceTree = "<group>";
 		};
 		1BE6C11F29E4562600FB55CF /* Supporting Files */ = {
@@ -286,6 +294,7 @@
 			files = (
 				045230F029D445EA008F8155 /* LaunchScreen.storyboard in Resources */,
 				045230ED29D445EA008F8155 /* Assets.xcassets in Resources */,
+				1B6F34E829FCB7BA001CBD46 /* IntroTeaching.storyboard in Resources */,
 				045230EB29D445E7008F8155 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,16 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B1ABDB729EA2CB6002E5D4E /* TopBottomImageButton.swift in Sources */,
 				1B400D7F29F8B4EE008B2D18 /* FirstTeachingViewController.swift in Sources */,
 				045230E829D445E7008F8155 /* ViewController.swift in Sources */,
+				1B5E509D29FCFFEE004CACBC /* EntertainmentViewController.swift in Sources */,
 				1BA63E0B29F82686002B2339 /* TimeLabel.swift in Sources */,
+				1B5E509F29FD0006004CACBC /* OthersViewController.swift in Sources */,
 				1B7B99C329F91738000FE459 /* FoodViewController.swift in Sources */,
-				1B97616929F8FD5D0096A1FF /* CapsuleView.swift in Sources */,
 				1BA63E0729F81911002B2339 /* LockViewController.swift in Sources */,
 				1B97616529F8D8C60096A1FF /* LifeViewController.swift in Sources */,
 				1B97616129F8D66C0096A1FF /* FourthTeachingViewController.swift in Sources */,
-				1BA5E65829E98E9C00FB8941 /* LeftRightImageButton.swift in Sources */,
 				1B400D7D29F8A987008B2D18 /* MusicViewController.swift in Sources */,
 				1B97615D29F8BC8D0096A1FF /* SecondTeachingViewController.swift in Sources */,
 				1BA63E0929F82621002B2339 /* TimeManager.swift in Sources */,

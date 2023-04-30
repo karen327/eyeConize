@@ -1,13 +1,13 @@
 //
-//  FourthTeachingViewController.swift
+//  TeachingViewController1.swift
 //  MindReader
 //
 //  Created by 曾思琦 on 2023/4/26.
 //
 
-import SwiftUI
+import UIKit
 
-class FourthTeachingViewController: UIViewController {
+class FirstTeachingViewController: UIViewController {
     
     @IBOutlet var imageViewArray: [UIImageView]!
 
@@ -24,19 +24,17 @@ class FourthTeachingViewController: UIViewController {
     func startTimer() {
         Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] timer in
             guard let self = self else { return }
-            // Find first imageView with black background color and change it to green
+            // Find first imageView with black tint color and change it to green
             if let imageView = self.imageViewArray.first(where: { $0.tintColor != .green }) {
                 imageView.tintColor = .green
-                imageView.backgroundColor = .green
             }
             // Check if all imageViews are green
             if self.imageViewArray.allSatisfy({ $0.tintColor == .green }) {
                 // Navigate to next page
-                self.performSegue(withIdentifier: "goToFinishTeachingView", sender: self)
+                self.performSegue(withIdentifier: "goToSecondTeachingView", sender: self)
                 // Stop the timer
                 timer.invalidate()
             }
         }
     }
 }
-

@@ -35,6 +35,22 @@ class FoodViewController: UIViewController {
             })
     }
     @IBAction func touchButton(_ sender: UIButton) {
+        switch sender{
+        case fruitButton:
+            sendMessage(message: "已成功发出消息：我想要吃水果。")
+            break
+        case mealButton:
+            sendMessage(message: "已成功发出消息：我想要吃正餐。")
+            break
+        case drinkButton:
+            sendMessage(message: "已成功发出消息：我想要喝水")
+            break
+        case milkButton:
+            sendMessage(message: "已成功发出消息：我想要喝牛奶")
+            break
+        default:
+            break
+        }
         sender.backgroundColor = UIColor.green
         DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
         sender.backgroundColor = UIColor.white
@@ -105,20 +121,16 @@ class FoodViewController: UIViewController {
                     switch messasge{
                         
                     case "..-.":
-                        sendMessage(message: "已成功发出消息：我想要吃水果。")
                         touchButton(fruitButton)
                         break;
                     case "-..":
                         touchButton(mealButton)
-                        sendMessage(message: "已成功发出消息：我想要吃正餐。")
                         break
                     case ".-.":
                         touchButton(drinkButton)
-                        sendMessage(message: "已成功发出消息：我想要喝水")
                         break
                     case "---":
                         touchButton(milkButton)
-                        sendMessage(message: "已成功发出消息：我想要喝牛奶")
                         break
                     case "....":
                         touchButton(goBackButton)

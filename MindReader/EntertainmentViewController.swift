@@ -13,7 +13,9 @@ class EntertainmentViewController:UIViewController{
     lazy var historyInput = inputBlank(inputStack: historyInputStack, inputContent: nil as String?, size: 0.5, maxLen: 260)
     
     
+    @IBOutlet weak var goToLifeButton: UIButton!
     
+    @IBOutlet weak var goToElseButton: UIButton!
     
     @IBOutlet weak var faceImage: UIImageView!
     
@@ -31,6 +33,7 @@ class EntertainmentViewController:UIViewController{
         switch sender{
         case musicButton:
             
+            sendMessage(message: "进入音乐模式……")
             sender.backgroundColor = UIColor.green
             DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
             sender.backgroundColor = UIColor.white
@@ -38,6 +41,45 @@ class EntertainmentViewController:UIViewController{
                 self.viewWillDisappear(false)
             })
             break
+        case novelButton:
+            sendMessage(message: "进入小说阅读模式……")
+            sender.backgroundColor = UIColor.green
+            DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
+            sender.backgroundColor = UIColor.white
+                self.performSegue(withIdentifier: "goToLife", sender: self)
+                self.viewWillDisappear(false)
+            })
+            break
+        case tiktokButton:
+            sendMessage(message: "进入抖音……")
+            sender.backgroundColor = UIColor.green
+            DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
+            sender.backgroundColor = UIColor.white
+                self.performSegue(withIdentifier: "goToLife", sender: self)
+                self.viewWillDisappear(false)
+            })
+            break
+        case moodButton:
+            sendMessage(message: "进入心情模式……")
+            sender.backgroundColor = UIColor.green
+            DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
+            sender.backgroundColor = UIColor.white
+                self.performSegue(withIdentifier: "goToLife", sender: self)
+                self.viewWillDisappear(false)
+            })
+            break
+            
+        case lockButton:
+            break
+        case goToLifeButton:
+            performSegue(withIdentifier: "goToLife", sender: self)
+            viewWillDisappear(false)
+            break
+        case goToElseButton:
+            performSegue(withIdentifier: "goToElse", sender: self)
+            viewWillDisappear(false)
+            break
+            
         default:
             break
         }
@@ -105,33 +147,28 @@ class EntertainmentViewController:UIViewController{
                 
                 if decode{
                     input.genNewStack(newContent: "")
-                    print("Decoding...")
                     switch messasge{
                         
-                    case ".-.":
+                    case "-.-":
                         touchButton(novelButton)
-                        sendMessage(message: "进入小说阅读模式……")
                         break;
                     case "---":
                         touchButton(musicButton)
-                        sendMessage(message: "进入音乐模式……")
                         break
                     case "-..":
                         touchButton(tiktokButton)
-                        sendMessage(message: "进入抖音……")
                         break
                     case ".--":
                         touchButton(moodButton)
-                        sendMessage(message: "进入心情模式……")
                         break
                     case "....":
+                        touchButton(lockButton)
                         break
                     case "..-.":
-                        performSegue(withIdentifier: "goToLife", sender: self)
-                        viewWillDisappear(false)
+                        touchButton(goToLifeButton)
+                        break
                     case ".--.":
-                        performSegue(withIdentifier: "goToElse", sender: self)
-                        viewWillDisappear(false)
+                        touchButton(goToElseButton)
                         
                         break
                         

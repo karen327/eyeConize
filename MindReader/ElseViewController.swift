@@ -15,7 +15,9 @@ class ElseViewController: UIViewController{
     
     @IBOutlet weak var lockButton: UIButton!
     
+    @IBOutlet weak var goToEntertainmentButton: UIButton!
     
+    @IBOutlet weak var goToLifeButton: UIButton!
     @IBOutlet weak var naviBar: UIImageView!
     @IBOutlet weak var faceImage: UIImageView!
     @IBOutlet weak var historyInputStackView: UIStackView!
@@ -25,10 +27,36 @@ class ElseViewController: UIViewController{
     @IBOutlet weak var acButton: UIButton!
     @IBOutlet weak var lightButton: UIButton!
     @IBAction func touchButton(_ sender: UIButton) {
-        sender.backgroundColor = UIColor.green
-        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
-        sender.backgroundColor = UIColor.white
-        })
+        switch sender{
+        case lightButton:
+            sendMessage(message: "调节灯光……")
+            break
+        case typeButton:
+            sendMessage(message: "进入文字消息撰写模式……")
+            break
+        case shortcutButton:
+            sendMessage(message: "进入快捷短语撰写模式……")
+            break
+        case acButton:
+            sendMessage(message: "调节空调……")
+            break
+        case goToLifeButton:
+            performSegue(withIdentifier: "goToLife", sender: self)
+            viewWillDisappear(false)
+            break
+        case goToEntertainmentButton:
+            performSegue(withIdentifier: "goToEntertainment", sender: self)
+            viewWillDisappear(false)
+            break
+        default:
+            break
+        }
+        if (sender != goToLifeButton && sender != goToEntertainmentButton){
+            sender.backgroundColor = UIColor.green
+            DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
+            sender.backgroundColor = UIColor.white
+            })
+        }
 
     }
     
@@ -36,7 +64,6 @@ class ElseViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("else did load.")
         
         faceImage.layer.cornerRadius = 20
         faceImage.backgroundColor = .white
@@ -102,31 +129,25 @@ class ElseViewController: UIViewController{
                     print("Decoding...")
                     switch messasge{
                         
-                    case "..-":
+                    case "-.-":
                         touchButton(typeButton)
-                        sendMessage(message: "进入文字消息撰写模式……")
                         break;
                     case "--.":
                         touchButton(shortcutButton)
-                        sendMessage(message: "进入音乐模式……")
                         break
                     case "---":
                         touchButton(acButton)
-                        sendMessage(message: "调节空调……")
                         break
-                    case "-.-":
+                    case "-.-.":
                         touchButton(lightButton)
-                        sendMessage(message: "调节灯光……")
                         break
                     case "....":
                         break
                     case "..-.":
-                        performSegue(withIdentifier: "goToLife", sender: self)
-                        viewWillDisappear(false)
+                        touchButton(goToLifeButton)
                         break
                     case ".-.-":
-                        performSegue(withIdentifier: "goToEntertainment", sender: self)
-                        viewWillDisappear(false)
+                        touchButton(goToEntertainmentButton)
                         break
                         
                     case .none: break

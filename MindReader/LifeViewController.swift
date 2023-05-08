@@ -15,6 +15,8 @@ class LifeViewController: UIViewController {
     lazy var input = inputBlank(inputStack: inputStack, inputContent: nil as String?, size: 1, maxLen: 260)
     lazy var historyInput = inputBlank(inputStack: historyStackView, inputContent: nil as String?, size: 0.5, maxLen: 260)
     
+    @IBOutlet weak var goToEntertainmentButton: UIButton!
+    @IBOutlet weak var goToElseButton: UIButton!
     @IBOutlet weak var emergencyButton: UIButton!
     @IBOutlet weak var callButton:UIButton!
     @IBOutlet weak var toiletButton:UIButton!
@@ -37,12 +39,14 @@ class LifeViewController: UIViewController {
             })
             break
         case emergencyButton:
+            sendMessage(message: "已成功发出求救消息！")
                 sender.backgroundColor = UIColor.green
                 DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
                 sender.backgroundColor = UIColor.white
                 })
             break
         case callButton:
+            sendMessage(message: "已成功呼唤亲属！")
             
                 sender.backgroundColor = UIColor.green
                 DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
@@ -50,10 +54,19 @@ class LifeViewController: UIViewController {
                 })
             break
         case toiletButton:
+            sendMessage(message: "已成功发出消息：我要上厕所")
                 sender.backgroundColor = UIColor.green
                 DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
                 sender.backgroundColor = UIColor.white
                 })
+            break
+        case goToEntertainmentButton:
+            performSegue(withIdentifier: "goToEntertainment", sender: self)
+            self.viewWillDisappear(false)
+            break
+        case goToElseButton:
+            performSegue(withIdentifier: "goToElse", sender: self)
+            self.viewWillDisappear(false)
             break
             
         default:
@@ -123,17 +136,14 @@ class LifeViewController: UIViewController {
                     print("Decoding...")
                     switch messasge{
                         
-                    case ".-.":
+                    case "-.-":
                         touchButton(callButton)
-                        sendMessage(message: "已成功呼唤亲属！")
                         break;
                     case "--.":
                         touchButton(emergencyButton)
-                        sendMessage(message: "已成功发出求救消息！")
                         break
                     case "-..":
                         touchButton(toiletButton)
-                        sendMessage(message: "已成功发出消息：我要上厕所")
                         break
                     case ".--":
                         touchButton(foodButton)
@@ -141,12 +151,9 @@ class LifeViewController: UIViewController {
                     case "....":
                         break
                     case ".-.-":
-                        performSegue(withIdentifier: "goToEntertainment", sender: self)
-                        self.viewWillDisappear(false)
+                        touchButton(goToEntertainmentButton)
                     case ".--.":
-                        performSegue(withIdentifier: "goToElse", sender: self)
-                        self.viewWillDisappear(false)
-                        
+                        touchButton(goToElseButton)
                         break
                         
                     case .none: break
